@@ -1,0 +1,13 @@
+
+
+
+
+
+#Ignore node modules get rebuilt at production by npm install command with package.json
+node_modules/
+
+
+# ignore all envs
+*.env
+.env.local
+.env.production

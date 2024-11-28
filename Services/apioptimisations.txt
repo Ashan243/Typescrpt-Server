@@ -1,0 +1,32 @@
+//Client side validation - Joi, Zod
+//Server Side Validation = Mongoose Schema validation, validate and validator
+
+//Performance Optimisations
+//Caching 
+//Logging 
+//Error Handling
+//Validation - Client side and server side validation
+
+
+//Rate Limiting - Prevent API by slowing excessive request using redis or express-rate-limit
+//Pagination or large dataset limiting
+//Data response compression middleware - compression package
+//Security - Helmet.js secure hTTP headers, using bcrypt for encryption, santize inputs to avoid NoSQL and SWL injection
+//Testing - Writing integration tests, units and end-to-end tests, and Test Driven Development
+
+
+
+//Routes
+//Having API versioning system - /api/v1/,,,, handle breaking change
+
+
+Models
+//pre middle style processes 
+// Add indexes - indexes speedup lookup times, for frequently request data
+
+Services
+// Circuit Breaker Patterns - If a serivce fails we want GRACEFULLY degrade 
+
+
+//Controllers
+//Keep the controller lean

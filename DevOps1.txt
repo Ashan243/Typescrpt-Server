@@ -1,0 +1,8 @@
+
+
+Two side to repo management
+
+1. Git (Local Repo) - master or main branch - so that can keep version of our code for storage purpose
+2. GitHub (Remote Repo) -master or main branch - So we can launch products to production
+
+/Gitignore

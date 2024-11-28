@@ -1,0 +1,60 @@
+//PCIDSS - Payment Card Industry Data Security Standard
+//For Compliance and Security
+//Encyrptions, regular audits, restricted access to payment data
+
+//1. Outsource to payment gateways
+//2. For Subscription we tokenisation, use the same token to make recurring payments without exposing sensitve data
+//3. Non-Senstive Payment Information
+
+//Non Senstive Data//
+1. Expiration Date
+2. Payment Method - Mastercard, Visa Debit
+3. Transaction History (Transaction only not senstive payment details)
+4. Last 4 digits of credit card (for user reference)
+
+
+
+
+//Sessions strategies
+//JWT authentication - stateless approach 
+//Stateless apporach there is no need to store session data on the server
+//APIs, Mobile Apps
+//Scability - Microservices, distrubed systems
+
+//When to use JWTs
+//Mobile Apps, Microsservices, Distrubuted archiectures
+//Minimum server side needs and for large scability
+
+//Redis
+//Database auth - stateful apporoach
+// A User logs in and the server create a session with a unique session ID
+//Server rendering of tokens for databases, it's stored as cookie
+
+//For each user request, the client sends the session ID to the server
+//The server looks up the session data in the database
+
+
+
+
+
+//When to use Database Session
+//If you need more granular control over a user session or you need features like session invalidation
+
+//Advantages
+//Better Control over user sessions for better user experience
+//Session Revocation: Very simple and easy to invalidate sessions, update the session or delete session
+//Persistance - Persistent Sessions: User data can persist between sessions
+
+
+
+//Disadvantages
+//Higher Request Overhead: Session query (lookup) increased latency between requests for session vs jwt tokens
+//Scalability: Server-Side Storage needs be bought, or use Cloud service
+
+
+
+//Expert Principle
+
+//private key and public key
+//Public Key = Public available, no ability to sign transactions
+//Private key - this ability to sign transaction e.g jwt transactions
